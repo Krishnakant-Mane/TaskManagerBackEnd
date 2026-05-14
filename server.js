@@ -10,7 +10,7 @@ import taskRoutes from "./Routes/taskRoutes.js";
 const app = express();
 
 app.use(cors({
-  origin: "https://taskmanager-frontend-blush.vercel.app",
+  origin: ["https://taskmanager-frontend-blush.vercel.app", "https://taskmanager-popaya.vercel.app"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
