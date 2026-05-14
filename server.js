@@ -17,7 +17,7 @@ app.use(cors({
 app.use(json());
 
 app.use("/api/users", userRoutes);
-app.use("/api/tasks", taskRoutes);
+app.use("/api/notes", taskRoutes);
 
 app.get("/", (req, res) => {
   res.send("Backend Running");
