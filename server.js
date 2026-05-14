@@ -9,7 +9,11 @@ import taskRoutes from "./Routes/taskRoutes.js";
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: "https://taskmanager-frontend-blush.vercel.app",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 app.use(json());
 
 app.use("/api/users", userRoutes);
